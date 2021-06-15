@@ -33,7 +33,6 @@ public class Kruskal {
                 bullyan = false;
 
                 test(selectedEdges, firstNode, null, secondNode);
-
                 if (!bullyan) {
                     selectedEdges.add(edge);
                 }
