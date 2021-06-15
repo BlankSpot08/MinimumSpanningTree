@@ -43,8 +43,8 @@ public class Prims {
 
         List<Edge<T>> temp = edges.stream()
                 .filter(e ->
-                        !(visited.contains(e.firstNode) && visited.contains(e.secondNode)) &&
-                         (current.contains(e.firstNode) || current.contains(e.secondNode)))
+                        !(visited.contains(e.firstNode) && visited.contains(e.secondNode))
+                                && (current.contains(e.firstNode) || current.contains(e.secondNode)))
                 .collect(Collectors.toList());
 
         list.add(temp.get(0));
