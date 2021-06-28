@@ -1,13 +1,13 @@
 package graph.weightedGraph;
 
 public class Edge<T extends Comparable<T>> {
-    public Node<T> parent;
-    public Node<T> destination;
+    public T firstNode;
+    public T secondNode;
     public int weight;
 
-    public Edge(final Node<T> firstNode, final Node<T> secondNode, final int weight) {
+    public Edge(T firstNode, T secondNode, int weight) {
+        this.firstNode = firstNode;
+        this.secondNode = secondNode;
         this.weight = weight;
-        this.destination = secondNode;
-        this.parent = firstNode;
     }
 }
