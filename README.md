@@ -1,2 +1,2 @@
 # MinimumSpanningTree
-Status: Broken </3
+Status: Broken
